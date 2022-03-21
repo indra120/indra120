@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @indra120
-- 👀 I’m interested in Software Development & Cybersecurity
+- 👀 I’m interested in Front-End Development, Cloud Service, & Cybersecurity
 - 🌱 I’m currently learning Front-end Web Development
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me
