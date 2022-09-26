@@ -1,8 +1,8 @@
 export default function Blob() {
   return (
     <svg
-      width='400'
-      height='400'
+      width={400}
+      height={400}
       viewBox='0 0 200 200'
       xmlns='http://www.w3.org/2000/svg'
     >
