@@ -4,13 +4,13 @@ export function Container({ children, className = '' }) {
   )
 }
 
-export function Flex({ children, className = '', item = false, wrap = false }) {
+export function Flex({ children, className = '', item = false, wrap = false, itemsCenter = false, spaceBetween = false }) {
   if (item) {
     return <div className={`w-full px-4 lg:w-1/2 ${className ? className : ''}`}>{children}</div>
   }
 
   return (
-    <div className={`flex ${wrap ? 'flex-wrap' : ''} ${className ? className : ''}`}>
+    <div className={`flex${wrap ? ' flex-wrap' : ''}${itemsCenter ? ' items-center' : ''}${spaceBetween ? ' justify-between' : ''} ${className ? className : ''}`}>
       {children}
     </div>
   )
@@ -25,5 +25,11 @@ export function IconLink({ children, href = '' }) {
     >
       {children}
     </a>
+  )
+}
+
+export function HamburgerLayer({ className = '' }) {
+  return (
+    <span className={`hamburger-layer ${className ? className : ''}`}></span>
   )
 }
