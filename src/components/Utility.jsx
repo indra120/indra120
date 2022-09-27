@@ -25,12 +25,12 @@ export function Flex({
   )
 }
 
-export function Wrapper({ children, className, half }) {
+export function Wrapper({ children, className, half, md, lg }) {
   return (
     <div
-      className={`w-full px-4 ${half ? 'lg:w-1/2' : ''} ${
-        className ? className : ''
-      }`}
+      className={`w-full px-4 ${
+        half ? `${lg ? 'lg' : md ? 'md' : ''}:w-1/2` : ''
+      } ${className ? className : ''}`}
     >
       {children}
     </div>
