@@ -6,24 +6,60 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+header {
+  @apply bg-transparent absolute top-0 left-0 w-full flex items-center z-10;
+}
+
 .fixed-navbar {
   @apply fixed z-[1000] bg-white bg-opacity-70;
   backdrop-filter: blur(5px);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
+.navbar-brand {
+  @apply font-bold text-lg text-primary block py-6;
+}
+
+.navbar-toggler {
+  @apply block absolute right-4 lg:hidden;
+}
+
 .hamburger-layer {
   @apply w-[30px] h-[2px] my-2 block bg-dark transition duration-300 ease-in-out;
 }
 
-.hamburger-active > span:nth-child(1) {
+.navbar-toggler > .hamburger-layer:nth-child(1) {
+  @apply origin-top-left;
+}
+
+.navbar-toggler > .hamburger-layer:nth-child(3) {
+  @apply origin-bottom-left;
+}
+
+.hamburger-active > .hamburger-layer:nth-child(1) {
   @apply rotate-45;
 }
 
-.hamburger-active > span:nth-child(3) {
+.hamburger-active > .hamburger-layer:nth-child(3) {
   @apply -rotate-45;
 }
 
-.hamburger-active > span:nth-child(2) {
+.hamburger-active > .hamburger-layer:nth-child(2) {
   @apply scale-0;
+}
+
+.nav-menu {
+  @apply absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none;
+}
+
+.nav-menu > ul {
+  @apply block lg:flex;
+}
+
+.nav-link {
+  @apply text-base text-dark py-2 mx-8 flex group-hover:text-primary;
+}
+
+.icon-link {
+  @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out;
 }

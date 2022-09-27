@@ -1,35 +1,50 @@
-export function Container({ children, className = '' }) {
+export function Container({ children, className }) {
   return (
     <div className={`container ${className ? className : ''}`}>{children}</div>
   )
 }
 
-export function Flex({ children, className = '', item = false, wrap = false, itemsCenter = false, spaceBetween = false }) {
-  if (item) {
-    return <div className={`w-full px-4 lg:w-1/2 ${className ? className : ''}`}>{children}</div>
-  }
-
+export function Flex({
+  children,
+  className,
+  wrap,
+  itemsCenter,
+  justifyCenter,
+  spaceBetween,
+}) {
   return (
-    <div className={`flex${wrap ? ' flex-wrap' : ''}${itemsCenter ? ' items-center' : ''}${spaceBetween ? ' justify-between' : ''} ${className ? className : ''}`}>
+    <div
+      className={`flex ${wrap ? 'flex-wrap' : ''} ${
+        itemsCenter ? 'items-center' : ''
+      } ${justifyCenter ? 'justify-center' : ''} ${
+        spaceBetween ? 'justify-between' : ''
+      } ${className ? className : ''}`}
+    >
       {children}
     </div>
   )
 }
 
-export function IconLink({ children, href = '' }) {
+export function Wrapper({ children, className, half }) {
   return (
-    <a
-      href={href}
-      target='_blank'
-      className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out'
+    <div
+      className={`w-full px-4 ${half ? 'lg:w-1/2' : ''} ${
+        className ? className : ''
+      }`}
     >
+      {children}
+    </div>
+  )
+}
+
+export function IconLink({ children, href }) {
+  return (
+    <a href={href} target='_blank' className='icon-link'>
       {children}
     </a>
   )
 }
 
-export function HamburgerLayer({ className = '' }) {
-  return (
-    <span className={`hamburger-layer ${className ? className : ''}`}></span>
-  )
+export function HamburgerLayer() {
+  return <span className='hamburger-layer' />
 }

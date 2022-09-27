@@ -1,4 +1,4 @@
-import { Container, Flex, IconLink } from './Utility'
+import { Container, Flex, IconLink, Wrapper } from './Utility'
 import { socialLinks } from '../data'
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
 
 function Left() {
   return (
-    <Flex item className='mb-10'>
+    <Wrapper half className='mb-10'>
       <h4 className='font-bold uppercase text-primary text-lg mb-3'>
         About Me
       </h4>
@@ -27,13 +27,13 @@ function Left() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
         impedit ea, cupiditate laborum earum aspernatur reiciendis.
       </p>
-    </Flex>
+    </Wrapper>
   )
 }
 
 function Right() {
   return (
-    <Flex item>
+    <Wrapper half>
       <h3 className='font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10'>
         Let's Connect
       </h3>
@@ -50,6 +50,6 @@ function Right() {
           </IconLink>
         ))}
       </Flex>
-    </Flex>
+    </Wrapper>
   )
 }

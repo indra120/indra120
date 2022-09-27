@@ -1,5 +1,5 @@
 import Blob from './Blob'
-import { Container, Flex } from './Utility'
+import { Container, Flex, Wrapper } from './Utility'
 
 export default function Hero() {
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
 
 function Left() {
   return (
-    <Flex item className='self-center'>
+    <Wrapper half className='self-center'>
       <h1 className='text-base font-semibold text-primary lg:text-xl'>
         Hi All!, I'm{' '}
         <span className='block font-bold text-dark text-4xl mt-1 lg:text-5xl'>
@@ -39,13 +39,13 @@ function Left() {
       >
         Contact Me
       </a>
-    </Flex>
+    </Wrapper>
   )
 }
 
 function Right() {
   return (
-    <Flex item className='self-end'>
+    <Wrapper half className='self-end'>
       <div className='mt-10 relative lg:mt-9 lg:right-0'>
         <img
           src='/images/profile-picture.png'
@@ -56,6 +56,6 @@ function Right() {
           <Blob />
         </span>
       </div>
-    </Flex>
+    </Wrapper>
   )
 }
