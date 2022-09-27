@@ -1,5 +1,5 @@
 import Blob from './Blob'
-import { Container, Flex, Wrapper } from './Utility'
+import { Button, Container, Flex, Wrapper } from './Utility'
 
 export default function Hero() {
   return (
@@ -33,12 +33,9 @@ function Left() {
         <span className='text-dark font-bold'>hours</span>
       </p>
 
-      <a
-        href='#'
-        className='text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out'
-      >
+      <Button type='link' href='#'>
         Contact Me
-      </a>
+      </Button>
     </Wrapper>
   )
 }

@@ -19,10 +19,6 @@ export const navLinks = [
     url: '#portfolio',
   },
   {
-    name: 'Clients',
-    url: '#clients',
-  },
-  {
     name: 'Contact',
     url: '#contact',
   },
@@ -77,3 +73,16 @@ export const projects = [
     description: 'Just a simple client-side CRUD application, like those to-do app. I use the vanilla HTML-CSS-JS trinity.',
   },
 ]
+
+export const sectionHeader = {
+  portfolio: {
+    title: 'Portfolio',
+    headline: 'Latest Projects',
+    shortDesc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam alias delectus exercitationem, a ratione. Iure sit suscipit a eaque.',
+  },
+  contact: {
+    title: 'Contact',
+    headline: 'Get in Touch',
+    shortDesc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam alias delectus exercitationem, a ratione. Iure sit suscipit a eaque.',
+  },
+}

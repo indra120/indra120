@@ -1,35 +1,20 @@
-import { Container, Flex, Wrapper } from './Utility'
-import { projects } from '../data'
+import { Container, Flex, Wrapper, SectionHeader } from './Utility'
+import { projects, sectionHeader } from '../data'
 
 export default function Portfolio() {
   return (
     <section id='portfolio' className='pt-36 pb-16 bg-slate-100'>
       <Container>
-        <Header />
+        <SectionHeader {...sectionHeader.portfolio} />
         <Content />
       </Container>
     </section>
   )
 }
 
-function Header() {
-  return (
-    <Wrapper>
-      <div className='max-w-xl mx-auto text-center mb-16'>
-        <h4 className='font-semibold text-lg text-primary mb-2'>Portfolio</h4>
-        <h2 className='font-bold text-dark text-3xl mb-4'>Latest Projects</h2>
-        <p className='font-medium text-md text-secondary'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam
-          alias delectus exercitationem, a ratione. Iure sit suscipit a eaque.
-        </p>
-      </div>
-    </Wrapper>
-  )
-}
-
 function Content() {
   return (
-    <Wrapper>
+    <Wrapper className='xl:w-10/12 xl:mx-auto'>
       <Flex wrap justifyCenter>
         {projects.map(project => (
           <Project
