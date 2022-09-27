@@ -2,7 +2,7 @@ import { Button, Container, Flex, Wrapper } from './Utility'
 
 export default function Hero() {
   return (
-    <section id='hero' className='pt-36 bg-slate-100'>
+    <section id='hero' className='pt-36 md:pt-30 bg-slate-100'>
       <Container>
         <Flex wrap className='md:flex-nowrap'>
           <Left />
@@ -24,7 +24,7 @@ function Left() {
       </h1>
 
       <h2 className='font-medium text-secondary text-lg mb-5 lg:text-2xl'>
-        Web Developer | <span className='text-dark'>IT Enthusiast</span>
+        <span className='text-dark'>Web Developer |</span> IT Enthusiast
       </h2>
 
       <p className='font-medium text-secondary mb-10 leading-relaxed'>
@@ -32,7 +32,7 @@ function Left() {
         <span className='text-dark font-bold'>hours</span>
       </p>
 
-      <Button type='link' href='#'>
+      <Button type='link' href='#contact'>
         Contact Me
       </Button>
     </Wrapper>

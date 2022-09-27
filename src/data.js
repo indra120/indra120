@@ -77,12 +77,12 @@ export const projects = [
 export const sectionHeader = {
   portfolio: {
     title: 'Portfolio',
-    headline: 'Latest Projects',
-    shortDesc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam alias delectus exercitationem, a ratione. Iure sit suscipit a eaque.',
+    headline: 'Finished Projects',
+    shortDesc: 'There are another cool projects that still not finished yet',
   },
   contact: {
     title: 'Contact',
     headline: 'Get in Touch',
-    shortDesc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam alias delectus exercitationem, a ratione. Iure sit suscipit a eaque.',
+    shortDesc: 'You cand ask me anything that you want',
   },
 }

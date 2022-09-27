@@ -12,8 +12,8 @@ export default function Footer() {
             </h2>
             <h3 className='font-bold text-2xl mb-2'>Contact Me</h3>
             <p>indrapranata120@gmail.com</p>
-            <p>Jl. Jalan No. 69</p>
-            <p>Tarakan</p>
+            <p>+62 812-5779-5009</p>
+            <p>Tarakan, Indonesia</p>
           </Wrapper>
 
           <Wrapper half md className='mb-12 text-slate-300'>

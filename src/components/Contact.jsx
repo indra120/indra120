@@ -2,6 +2,17 @@ import { Button, Container, SectionHeader, Wrapper } from './Utility'
 import { sectionHeader } from '../data'
 
 export default function Contact() {
+  function handleSubmit(e) {
+    e.preventDefault()
+    const form = new FormData(e.target)
+    const { name, email, subject, message } = Object.fromEntries(form.entries())
+
+    const link = document.createElement('a')
+    link.href = `mailto:ryzenix.id@gmail.com?subject=${subject}&body=${name} | ${email} | ${message}`
+    link.target = '_blank'
+    link.click()
+  }
+
   return (
     <section id='contact' className='pt-36 pb-32'>
       <Container>
@@ -9,10 +20,11 @@ export default function Contact() {
           <SectionHeader {...sectionHeader.contact} />
         </Wrapper>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <Wrapper className='lg:w-2/3 mx-auto px-0'>
             <Input type='text' label='Name' name='name' />
             <Input type='email' label='E-Mail' name='email' />
+            <Input type='text' label='Subject' name='subject' />
             <Input type='textarea' label='Message' name='message' />
 
             <Wrapper>
@@ -34,9 +46,9 @@ function Input({ label, name, type }) {
         {label}
       </label>
       {type == 'textarea' ? (
-        <textarea name={name} id={name} className='input h-32' />
+        <textarea name={name} id={name} className='input h-32' required />
       ) : (
-        <input type={type} name={name} id={name} className='input' />
+        <input type={type} name={name} id={name} className='input' required />
       )}
     </Wrapper>
   )

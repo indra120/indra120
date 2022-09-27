@@ -21,11 +21,13 @@ function Left() {
         About Me
       </h4>
       <h2 className='font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl'>
-        Life is just like a soup, and I'm fork
+        Start of the Journey
       </h2>
       <p className='font-medium text-base text-secondary max-w-xl lg:text-lg'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-        impedit ea, cupiditate laborum earum aspernatur reiciendis.
+        It all started from 2020. I have so much free time because of study from home, but I didn't know
+        what to do. So, I tried to learn web dev, starting from HTML & CSS. It
+        was lot of fun, but then I know that there is a lot of other things that
+        I should know to become a 'Web Developer'. I decided to explore this world.
       </p>
     </Wrapper>
   )
@@ -39,8 +41,9 @@ function Right() {
       </h3>
 
       <p className='font-medium text-base text-secondary mb-6 lg:text-lg'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum
-        adipisci ipsam eveniet obcaecati, aspernatur error laboriosam accusamus?
+        These are my social media accounts. Check it out if you want to know
+        more about me. Maybe we can be a friend, co-worker, or even business
+        partner!
       </p>
 
       <Flex itemsCenter>
