@@ -21,7 +21,7 @@ function Left() {
         About Me
       </h4>
       <h2 className='font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl'>
-        Start of the Journey
+        Begin of the Journey
       </h2>
       <p className='font-medium text-base text-secondary max-w-xl lg:text-lg'>
         It all started from 2020. I have so much free time because of study from home, but I didn't know

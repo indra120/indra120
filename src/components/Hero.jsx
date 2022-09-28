@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Button, Container, Flex, Wrapper } from './Utility'
 
 export default function Hero() {
@@ -43,10 +44,14 @@ function Right() {
   return (
     <Wrapper half lg className='self-end'>
       <div className='mt-10 relative lg:mt-9 lg:right-0'>
-        <img
+        <Image
+          priority
           src='/images/profile-picture.png'
           alt='Indra Pranata'
-          className='max-w-full mx-auto'
+          width={499}
+          height={500}
+          layout='responsive'
+          className='mx-auto'
         />
       </div>
     </Wrapper>

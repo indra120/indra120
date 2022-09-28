@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Container, Flex, Wrapper, SectionHeader } from './Utility'
 import { projects, sectionHeader } from '../data'
 
@@ -33,9 +34,16 @@ function Content() {
 function Project({ title, imageUrl, description, livePreview }) {
   return (
     <div className='mb-12 p-4 md:w-1/2'>
-      <div className='rounded-md shadow-md overflow-hidden'>
+      <div className='rounded-md shadow-md overflow-hidden '>
         <a href={livePreview}>
-          <img src={imageUrl} alt={title} title={title} />
+          <Image
+            src={imageUrl}
+            alt={title}
+            title={title}
+            width='488.66'
+            height='278'
+            layout='responsive'
+          />
         </a>
       </div>
 

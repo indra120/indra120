@@ -8,7 +8,7 @@ export default function Contact() {
     const { name, email, subject, message } = Object.fromEntries(form.entries())
 
     const link = document.createElement('a')
-    link.href = `mailto:ryzenix.id@gmail.com?subject=${subject}&body=${name} | ${email} | ${message}`
+    link.href = `mailto:indrapranata120@gmail.com?subject=${subject}&body=${name} | ${email} | ${message}`
     link.target = '_blank'
     link.click()
   }

@@ -3,6 +3,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TelegramIcon,
+  WhatsappIcon,
 } from './components/Icons'
 
 export const navLinks = [
@@ -45,6 +46,11 @@ export const socialLinks = [
     url: 'https://t.me/indryzenix',
     Icon: TelegramIcon,
   },
+  {
+    name: 'Whatsapp',
+    url: 'https://wa.me/6281257795009',
+    Icon: WhatsappIcon,
+  },
 ]
 
 export const projects = [
@@ -83,6 +89,6 @@ export const sectionHeader = {
   contact: {
     title: 'Contact',
     headline: 'Get in Touch',
-    shortDesc: 'You cand ask me anything that you want',
+    shortDesc: 'You cand ask me everything that you want',
   },
 }
